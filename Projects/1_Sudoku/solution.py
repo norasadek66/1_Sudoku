@@ -26,8 +26,6 @@ def naked_twins(values):
               for box2 in intersection_of_peers:
                   for digit in value:
                       if digit in values[box2]:
-                          #print(value, "value repeated")
-                          #print("before ",sudoko_copy[box2])
                           sudoko_copy[box2]=sudoko_copy[box2].replace(digit, "")
                           #print("after ", sudoko_copy[box2])
 
